@@ -17,11 +17,11 @@ const Ordernar =()=>{
 const save = () =>{
   const nextId = skillReactivo.value.length + 1;
   if(skillInput.value.length == 0){
-    return alert('Ingrese una habilidad')
+    return alert('Ingrese un cantante')
   }
   const findSkills =   skillReactivo.value.find(i =>i.name.toLowerCase() == skillInput.value.toLowerCase());
   if(findSkills != null){
-   return alert('Habilidad en existencia')
+   return alert('Cantante en existencia')
   }
   skillReactivo.value.push(
     {
@@ -36,7 +36,7 @@ const save = () =>{
 
 <template>
   <div class="texto">
-    <input class="input" type="text" placeholder="Agrega habilidad" v-model="skillInput"   @keyup.enter="save"/>
+    <input class="input" type="text" placeholder="Agrega un cantante" v-model="skillInput"   @keyup.enter="save"/>
     <select placeholder="Ordenar Lista" v-model="order" @change="Ordernar">
       <option value="asce">Ascendente</option>
       <option value="desce">Descendente</option>

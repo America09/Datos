@@ -2,23 +2,23 @@ import type { ISkill } from "../components/interface/ISkill";
 const Skills : ISkill[] =[
     {
         id:1,
-        name:"Futboll"
+        name:"Harry"
     },
     {
         id:2,
-        name:"Lectura"
+        name:"Louis"
     },
     {
         id:3,
-        name:"Canto"
+        name:"Niall"
     },
     {
         id:4,
-        name:"Boxeo"
+        name:"Zayn"
     },
     {
         id:5,
-        name:"Karate"
+        name:"Liam"
     }
 ];
 export default Skills;
